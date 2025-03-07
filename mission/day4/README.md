@@ -26,7 +26,6 @@ public boolean validateOrder(Order order) {
     return true;
 }
 ```
-<br>
 
 ##### tobe
 
