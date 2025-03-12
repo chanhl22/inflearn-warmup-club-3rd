@@ -1,4 +1,4 @@
-package mission.day7.io;
+package hello.mission.day7.io;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,15 +6,15 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import mission.day7.model.StudyCafeLockerPass;
-import mission.day7.model.StudyCafePass;
-import mission.day7.model.StudyCafePassType;
+import hello.mission.day7.model.StudyCafeLockerPass;
+import hello.mission.day7.model.StudyCafePass;
+import hello.mission.day7.model.StudyCafePassType;
 
 public class StudyCafeFileHandler {
 
     public List<StudyCafePass> readStudyCafePasses() {
         try {
-            List<String> lines = Files.readAllLines(Paths.get("src/main/resources/cleancode/studycafe/pass-list.csv"));
+            List<String> lines = Files.readAllLines(Paths.get("mission/src/main/resources/cleancode/studycafe/pass-list.csv"));
             List<StudyCafePass> studyCafePasses = new ArrayList<>();
             for (String line : lines) {
                 String[] values = line.split(",");
@@ -35,7 +35,7 @@ public class StudyCafeFileHandler {
 
     public List<StudyCafeLockerPass> readLockerPasses() {
         try {
-            List<String> lines = Files.readAllLines(Paths.get("src/main/resources/cleancode/studycafe/locker.csv"));
+            List<String> lines = Files.readAllLines(Paths.get("mission/src/main/resources/cleancode/studycafe/locker.csv"));
             List<StudyCafeLockerPass> lockerPasses = new ArrayList<>();
             for (String line : lines) {
                 String[] values = line.split(",");

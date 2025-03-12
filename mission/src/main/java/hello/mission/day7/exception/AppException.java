@@ -1,4 +1,4 @@
-package mission.day7.exception;
+package hello.mission.day7.exception;
 
 public class AppException extends RuntimeException {
 
