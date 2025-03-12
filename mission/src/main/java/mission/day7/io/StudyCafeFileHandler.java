@@ -1,4 +1,4 @@
-package hello.mission.day7.io;
+package mission.day7.io;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,9 +6,9 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import hello.mission.day7.model.StudyCafeLockerPass;
-import hello.mission.day7.model.StudyCafePass;
-import hello.mission.day7.model.StudyCafePassType;
+import mission.day7.model.StudyCafeLockerPass;
+import mission.day7.model.StudyCafePass;
+import mission.day7.model.StudyCafePassType;
 
 public class StudyCafeFileHandler {
 
