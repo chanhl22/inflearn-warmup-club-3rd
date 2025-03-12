@@ -1,7 +1,7 @@
-package hello.mission.day7.io;
+package hello.mission.studycafe.io;
 
-import hello.mission.day7.model.StudyCafeLockerPass;
-import hello.mission.day7.model.StudyCafePass;
+import hello.mission.studycafe.model.StudyCafeLockerPass;
+import hello.mission.studycafe.model.StudyCafePass;
 
 import java.util.List;
 

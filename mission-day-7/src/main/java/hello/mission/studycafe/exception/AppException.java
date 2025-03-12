@@ -1,4 +1,4 @@
-package hello.mission.day7.exception;
+package hello.mission.studycafe.exception;
 
 public class AppException extends RuntimeException {
 

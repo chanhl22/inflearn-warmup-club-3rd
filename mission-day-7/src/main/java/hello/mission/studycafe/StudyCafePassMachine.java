@@ -1,12 +1,12 @@
-package hello.mission.day7;
+package hello.mission.studycafe;
 
-import hello.mission.day7.exception.AppException;
-import hello.mission.day7.io.InputHandler;
-import hello.mission.day7.io.OutputHandler;
-import hello.mission.day7.io.StudyCafeFileHandler;
-import hello.mission.day7.model.StudyCafeLockerPass;
-import hello.mission.day7.model.StudyCafePass;
-import hello.mission.day7.model.StudyCafePassType;
+import hello.mission.studycafe.exception.AppException;
+import hello.mission.studycafe.io.InputHandler;
+import hello.mission.studycafe.io.OutputHandler;
+import hello.mission.studycafe.io.StudyCafeFileHandler;
+import hello.mission.studycafe.model.StudyCafeLockerPass;
+import hello.mission.studycafe.model.StudyCafePass;
+import hello.mission.studycafe.model.StudyCafePassType;
 
 import java.util.List;
 

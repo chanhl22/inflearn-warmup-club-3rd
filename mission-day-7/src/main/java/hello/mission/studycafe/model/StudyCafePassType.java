@@ -1,4 +1,4 @@
-package hello.mission.day7.model;
+package hello.mission.studycafe.model;
 
 public enum StudyCafePassType {
 

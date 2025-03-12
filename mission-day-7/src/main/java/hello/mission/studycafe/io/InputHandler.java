@@ -1,8 +1,8 @@
-package hello.mission.day7.io;
+package hello.mission.studycafe.io;
 
-import hello.mission.day7.model.StudyCafePassType;
-import hello.mission.day7.exception.AppException;
-import hello.mission.day7.model.StudyCafePass;
+import hello.mission.studycafe.model.StudyCafePassType;
+import hello.mission.studycafe.exception.AppException;
+import hello.mission.studycafe.model.StudyCafePass;
 
 import java.util.List;
 import java.util.Scanner;

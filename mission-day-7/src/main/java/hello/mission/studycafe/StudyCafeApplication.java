@@ -1,4 +1,4 @@
-package hello.mission.day7;
+package hello.mission.studycafe;
 
 public class StudyCafeApplication {
 
