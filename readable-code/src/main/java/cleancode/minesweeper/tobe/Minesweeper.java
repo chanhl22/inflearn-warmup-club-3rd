@@ -7,6 +7,7 @@ public class Minesweeper {
 
     public static final int BOARD_ROW_SIZE = 8;
     public static final int BOARD_COL_SIZE = 10;
+    private static final char BASE_CHAR_FOR_COL = 'a';
 
     private final GameBoard gameBoard = new GameBoard(BOARD_ROW_SIZE, BOARD_COL_SIZE);
     private final ConsoleInputHandler consoleInputHandler = new ConsoleInputHandler();
@@ -81,7 +82,7 @@ public class Minesweeper {
     }
 
     private int getSelectedRowIndex(String cellInput) {
-        char cellInputRow = cellInput.charAt(1);
+        String cellInputRow = cellInput.substring(1);
         return convertRowFrom(cellInputRow);
     }
 
@@ -118,40 +119,22 @@ public class Minesweeper {
         gameStatus = 1;
     }
 
-    private int convertColFrom(char cellInputCol) {
-        switch (cellInputCol) {
-            case 'a':
-                return 0;
-            case 'b':
-                return 1;
-            case 'c':
-                return 2;
-            case 'd':
-                return 3;
-            case 'e':
-                return 4;
-            case 'f':
-                return 5;
-            case 'g':
-                return 6;
-            case 'h':
-                return 7;
-            case 'i':
-                return 8;
-            case 'j':
-                return 9;
-            default:
-                throw new GameException("잘못된 입력입니다.");
-        }
-    }
-
-    private int convertRowFrom(char cellInputRow) {
-        int rowIndex = Character.getNumericValue(cellInputRow) - 1;
+    private int convertRowFrom(String cellInputRow) {
+        int rowIndex = Integer.parseInt(cellInputRow) - 1;
         if (rowIndex >= BOARD_ROW_SIZE) {
             throw new GameException("잘못된 입력입니다.");
         }
 
         return rowIndex;
+    }
+
+    private int convertColFrom(char cellInputCol) {
+        int colIndex = cellInputCol - BASE_CHAR_FOR_COL;
+        if (colIndex < 0) {
+            throw new GameException("잘못된 입력입니다.");
+        }
+
+        return colIndex;
     }
 
 }
