@@ -1,6 +1,7 @@
 package cleancode.minesweeper.tobe;
 
 import cleancode.minesweeper.tobe.cell.Cell;
+import cleancode.minesweeper.tobe.cell.Cells;
 import cleancode.minesweeper.tobe.cell.EmptyCell;
 import cleancode.minesweeper.tobe.cell.LandMineCell;
 import cleancode.minesweeper.tobe.cell.NumberCell;
@@ -68,9 +69,8 @@ public class GameBoard {
     }
 
     public boolean isAllCellChecked() {
-        return Arrays.stream(board)
-                .flatMap(Arrays::stream)
-                .allMatch(Cell::isChecked);
+        Cells cells = Cells.from(board);
+        return cells.isAllChecked();
     }
 
     public boolean isInvalidCellPosition(CellPosition cellPosition) {
