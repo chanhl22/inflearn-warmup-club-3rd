@@ -29,7 +29,7 @@ public class CellSnapshot {
     }
 
     public static CellSnapshot ofNumber(int nearbyLandMineCount) {
-        return of(CellSnapshotStatus.LAND_MINE, nearbyLandMineCount);
+        return of(CellSnapshotStatus.NUMBER, nearbyLandMineCount);
     }
 
     public static CellSnapshot ofUnchecked() {
@@ -60,4 +60,5 @@ public class CellSnapshot {
     public int hashCode() {
         return Objects.hash(getStatus(), getNearbyLandMineCount());
     }
+
 }
